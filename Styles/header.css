@@ -1,18 +1,4 @@
-body {
-    margin: 0%;
-  }
-  
-  h1, h3 {
-    margin-block-start: 0.35em;
-    margin-block-end: 0.35em;
-  }
-  
-  button {
-    background: none;
-    border: none;
-  }
-  
-  .header {
+    .header {
     height: 100vh;
     background-image: url("../Assets/Img/Background.png");
     background-size: cover;

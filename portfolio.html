@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+
 
 </head>
 <body>
@@ -34,42 +36,292 @@
 
         </header>
     
-        <main>
+        <main class="main">
             <section id="about">
-                <h1>Чем я полезна</h1>
-                <p>Текст о пользе...</p>
+                <img src="./Assets/Img/Photo1.jpg" alt="Photo" class="about__photo">
+                <div class="about__info">
+                    <h3>Про меня</h3>
+                    <h2>Меня зовут Александра</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                       ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                       aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                       in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                       officia deserunt mollit anim id est laborum</p>
+                      <div class="about__blocks">
+                      <div class="about__block">
+                        <img class="about__icon" src="./Assets/Icons/web_development.svg" alt="Web development">
+                      <div class="about__icon_text">
+                        <h4>Web-разработка</h4>
+                        <small>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua.</small>
+                      </div>
+                      </div>
+                      <div class="about__block">
+                        <img class="about__icon" src="./Assets/Icons/mobile_dev.svg" alt="Mobile development">
+                      <div class="about__icon_text">
+                        <h4>Разработка приложений</h4>
+                        <small>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua.</small>
+                      </div>
+                      </div>
+                      <div class="about__block">
+                        <img class="about__icon" src="./Assets/Icons/design.svg" alt="Design">
+                      <div class="about__icon_text">
+                        <h4>UI/UX Design</h4>
+                        <small>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua.</small>
+                      </div>
+                      </div>
+                    </div>
+                </div>
             </section>
 
             <section id="experience">
-                <h1>Чем я полезна</h1>
-                <p>Текст о пользе...</p>
-            </section>
+                <h3>Опыт</h3>
+                  <h2>Чем я буду полезна</h2>
+                  <div class="experience__block">
+                    
+                    <div class="experience__column">
+                      <h3>Образование</h3>
+                      <div class="experience__item">
+                        <img src="./Assets/Icons/University.svg" alt="University" class="experience-icon">
+                        <div class="experience__content">
+                          <h4>МГТУ им. Н. Э. Баумана</h4>
+                          <p>Диплом магистра | Москва (2014–2020)</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        </div>
+                      </div>
+                      <div class="experience__item">
+                        <img src="./Assets/Icons/Courses.svg" alt="Courses" class="experience-icon">
+                        <div class="experience__content">
+                          <h4>Udemy</h4>
+                          <p>Курсы по Web-разработке</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Опыт работы -->
+                    <div class="experience__column">
+                      <h3 >Опыт работы</h3>
+                      <div class="experience__item">
+                        <img src="./Assets/Icons/Developer.svg" alt="Developer" class="experience-icon">
+                        <div class="experience__content">
+                          <h4>Front-End Developer</h4>
+                          <p>EPAM | Москва (2018–2019)</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        </div>
+                      </div>
+                      <div class="experience__item">
+                        <img src="./Assets/Icons/designer.svg" alt="Design" class="experience-icon">
+                        <div class="experience__content">
+                          <h4>UI/UX Designer</h4>
+                          <p>Squad Team | Москва (2018)</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+              </section>
+              
 
-            <section id="skills">
-                <h1>Чем я полезна</h1>
-                <p>Текст о пользе...</p>
+              <section id="skills">
+                <h3>Навыки</h3>
+                <h2>Что я использую в работе</h2>
+                <div class="skills__container">
+                    <div class="skill">
+                        <img src="./Assets/Icons/html5.svg" alt="HTML5">
+                        <h4>HTML5</h4>
+                        <p>Именно он создает каркас вашего сайта или приложения, а затем верстка позволяет мне создать более SEO-оптимизированную структуру вашего продукта.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/css3.svg" alt="CSS3">
+                        <h4>CSS3</h4>
+                        <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/JS.svg" alt="JavaScript">
+                        <h4>JavaScript</h4>
+                        <p>Этот язык программирования позволяет оживить все: от слайдеров, форм, подсказок, всплывающих окон до серверов и многого другого.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/Jquery.svg" alt="jQuery">
+                        <h4>jQuery</h4>
+                        <p>Библиотека jQuery позволяет ускорить разработку. Без необходимости интегрировать в проект её мы не будем, но навык работы с ней присутствует.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/React.svg" alt="React">
+                        <h4>React</h4>
+                        <p>Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваш случай.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/Node.js.svg" alt="Node.js">
+                        <h4>Node.js</h4>
+                        <p>Эта платформа позволяет создать сервер для вашего проекта – "мозг", который будет выполнять действия, которые пользователь не видит.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="./Assets/Icons/Mongo.db.svg" alt="MongoDB">
+                        <h4>MongoDB</h4>
+                        <p>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения.</p>
+                    </div>
+                </div>
+                ...
+<div class="skills__progress">
+    <div class="skills__bars">
+        <p>Создание сайтов <span class="percentage">100%</span></p>
+        <div class="skill__bar"><span style="width: 100%;"></span></div>
+    </div>
+    <div class="skills__bars">
+        <p>Создание приложений <span class="percentage">85%</span></p>
+        <div class="skill__bar"><span style="width: 85%;"></span></div>
+    </div>
+    <div class="skills__bars">
+        <p>Работа с данными <span class="percentage">90%</span></p>
+        <div class="skill__bar"><span style="width: 90%;"></span></div>
+    </div>
+    <div class="skills__bars">
+        <p>Креативность <span class="percentage">70%</span></p>
+        <div class="skill__bar"><span style="width: 70%;"></span></div>
+    </div>
+    <div class="skills__bars">
+        <p>Создание дизайна <span class="percentage">90%</span></p>
+        <div class="skill__bar"><span style="width: 90%;"></span></div>
+    </div>
+    <div class="skills__bars">
+        <p>Soft skills <span class="percentage">95%</span></p>
+        <div class="skill__bar"><span style="width: 95%;"></span></div>
+    </div>
+</div>
+...
             </section>
+            
 
             <section id="portfolio">
-                <h1>Чем я полезна</h1>
-                <p>Текст о пользе...</p>
+               <h3>Портфолио</h3> 
+                <h2>Мои работы</h2>
+                <div class="portfolio__block">
+                    <div class="portfolio__item1">
+                        <img src="./Assets/Img/uber.jpg" alt="Portfolio 1">
+                    </div>
+                    <div class="portfolio__item2">
+                        <img src="./Assets/Img/pulse.jpg" alt="Portfolio 2">
+                    </div>
+                    <div class="portfolio__item3">
+                        <img src="./Assets/Img/bread.jpg" alt="Portfolio 3">
+                    </div>
+                    <div class="portfolio__item4">
+                        <img src="./Assets/Img/plans.jpg" alt="Portfolio 4">
+                    </div>
+                    <div class="portfolio__item5">
+                        <img src="./Assets/Img/ipad.jpg" alt="Portfolio 5">
+                    </div>
+                    <div class="portfolio__item6">
+                        <img src="./Assets/Img/mac.jpg" alt="Portfolio 6">
+                    </div>
+                </div>
             </section>
-            <section id="price">
-                <h1>Чем я полезна</h1>
-                <p>Текст о пользе...</p>
-            </section>
-            <section id="contact">
-                <h2>Свяжитесь со мной</h2>
-                <form id="contact-form">
-                    <input type="text" id="name" placeholder="Ваше имя" required>
-                    <input type="email" id="email" placeholder="Ваш email" required>
-                    <textarea id="message" placeholder="Ваше сообщение" required></textarea>
-                    <button type="submit">Отправить</button>
-                    <p class="form-message"></p>
-                </form>
-            </section>
-        </main>
     
+            <!-- Price Section -->
+            <section id="price">
+                    <h2>Прайс-лист</h2>
+                    <div class="price__list">
+                        <!-- Left Column -->
+                        <div class="price__column">
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Landing-page</h4>
+                                    <p>Одностраничный сайт для презентации услуг/товаров.</p>
+                                </div>
+                                <div class="price__count">от 8000 руб.</div>
+                            </div>
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Корпоративный сайт</h4>
+                                    <p>Сайт для вашего бизнеса или компании.</p>
+                                </div>
+                                <div class="price__count">от 20000 руб.</div>
+                            </div>
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Интернет-магазин</h4>
+                                    <p>Инструмент для ваших продаж в сети.</p>
+                                </div>
+                                <div class="price__count">от 30000 руб.</div>
+                            </div>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="price__column">
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Web-приложение</h4>
+                                    <p>Приложение внутри браузера для лучшего комфорта.</p>
+                                </div>
+                                <div class="price__count">от 28000 руб.</div>
+                            </div>
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Android/iOS Приложение</h4>
+                                    <p>Приложение для смартфона любой ОС.</p>
+                                </div>
+                                <div class="price__count">от 26000 руб.</div>
+                            </div>
+                            <div class="price__item">
+                                <div class="price__text">
+                                    <h4>Дизайн</h4>
+                                    <p>Создадим дизайн для вашего сайта/приложения.</p>
+                                </div>
+                                <div class="price__count">Индивидуально</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact">
+                    <img src="./Assets/Img/Photo1.jpg" alt="photo" class="contact__image">
+                        <div class="contact__form">
+                            <h3>Контакты</h3>
+                            <h2>Свяжитесь со мной</h2>
+                            <p>Любым удобным для вас способом:</p>
+                            <div class="contact__links">
+                                <a href="#"><img src="./Assets/Icons/Facebook.svg" alt="Facebook"></a> 
+                                <a href="#"><img src="./Assets/Icons/Telegram.svg" alt="Telegram"></a> 
+                                <a href="#"><img src="./Assets/Icons/Instagram.svg" alt="Instagram"></a>                         
+                            </div>
+                            <p>Или оставьте ваши данные и я сама вам напишу:</p>
+                            <form class="form__container">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" placeholder="Иван">
+            
+                                <label for="email">Ваша почта</label>
+                                <input type="email" id="email" placeholder="ivan@example.com">
+            
+                                <label for="message">Ваше сообщение</label>
+                                <textarea id="message" placeholder="Напишите ваше сообщение..."></textarea>
+            
+                                <button type="submit">Отправить сообщение</button>
+                            </form>
+                        </div>
+                </section>
+            </main>
+    
+        <script>
+            // Dynamic progress bar animation
+            document.addEventListener("DOMContentLoaded", () => {
+                const skillBars = document.querySelectorAll(".skill-bar span");
+                skillBars.forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = "0";
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 200);
+                });
+            });
+        </script>
     </body>
-</body>
-</html>
+    </html>

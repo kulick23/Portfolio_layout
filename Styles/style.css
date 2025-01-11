@@ -1,0 +1,260 @@
+body {
+    margin: 0%;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-block-start: 0.35em;
+    margin-block-end: 0.35em;
+  }
+  h4 {
+   
+    margin-block-start: 0em;
+  
+   
+}
+  
+  button {
+    background: none;
+    border: none;
+  }
+main{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+
+
+#about {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5%;
+}
+
+.about__photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about__blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.about__block{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+
+
+  
+  /* Секция опыта */
+  #experience {
+    padding: 40px 0;
+  }
+  
+ 
+  
+  .experience__block {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .experience__column {
+    flex: 1;
+
+    padding: 20px;
+  }
+  
+  
+  
+  .experience__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .experience-icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+
+
+  /* Пример стилей для блока навыков */
+  #skills {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* small gap between items */
+    margin-top: 30px;
+    overflow: hidden; /* Ensure children do not overflow */
+}
+
+.skill {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    aspect-ratio: 1 / 1; /* make it square */
+    overflow: hidden; /* Ensure content does not overflow */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.skills__progress{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+    
+
+.skill__bar {
+    margin: 10px 0;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 5px;
+    position: relative;
+}
+.skill__bar span {
+    display: block;
+    height: 20px;
+    width: 0;
+    background: orange;
+    border-radius: 5px;
+    transition: width 0.8s ease-in-out;
+}
+.skills__bars {
+    margin-bottom: 20px;
+}
+
+.skills__bars p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.skills__bars .percentage {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+
+/* Portfolio Section */
+.portfolio__block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+    }
+        
+    .portfolio__item1,
+    .portfolio__item2, 
+    .portfolio__item3, 
+    .portfolio__item4, 
+    .portfolio__item5, 
+    .portfolio__item6{
+        overflow: hidden;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio__item4 {
+        grid-row: span 2 / span 2;
+    }
+    
+    
+    .portfolio__item6 {
+        grid-column: span 2 / span 2;
+    }
+        
+
+
+
+    .price__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .price__column {
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+    .price__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .price__text {
+        flex: 1;
+    }
+    .price__count {
+        font-weight: bold;
+        color: #000;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        background-color: #f9f9f9;
+    }
+
+    #contact {
+        display: flex;
+        max-width: 1200px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .contact__image {
+        flex: 1;
+    }
+
+    .contact__form {
+        flex: 1;
+        padding: 40px;
+    } 
+
+    .contact__links {
+        margin-bottom: 20px;
+    }
+
+    .form__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__container input,
+    .form__container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form__container textarea {
+        resize: none;
+        height: 100px;
+    }
+
+ 

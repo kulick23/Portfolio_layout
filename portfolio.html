@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/about.css">
+    <link rel="stylesheet" href="./Styles/experience.css">
+    <link rel="stylesheet" href="./Styles/contact.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/portfolio.css">
+    <link rel="stylesheet" href="./Styles/price.css">
+    <link rel="stylesheet" href="./Styles/skills.css">
+
 
 
 </head>
@@ -56,9 +64,9 @@
                     <div class="about__blocks">
                         <div class="about__block">
                             <div class="about__icon">
-                            <div class="text-with-circle"></div>
+                                <div class="text-with-circle"></div>
                                 <img src="./Assets/Icons/web_development.svg" alt="Web development">
-                        </div>
+                            </div>
                             <div class="about__icon--text">
                                 <h4>Web-разработка</h4>
                                 <small>Lorem ipsum dolor sit amet,<br>
@@ -95,125 +103,172 @@
             </section>
 
             <section id="experience">
-                <h3>Опыт</h3>
+
+
+                <h3 class="text-centre-circle">Опыт</h3>
                 <h2>Чем я буду полезна</h2>
+                <div class="horizontal-bar line-centered"></div>
                 <div class="experience__block">
 
                     <div class="experience__column">
                         <h3>Образование</h3>
-                        <div class="experience__item">
-                            <img src="./Assets/Icons/University.svg" alt="University" class="experience-icon">
-                            <div class="experience__content">
-                                <h4>МГТУ им. Н. Э. Баумана</h4>
-                                <p>Диплом магистра | Москва (2014–2020)</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <div class="experience__timeline">
+                            <div class="experience__item">
+                                <div class="experience__content">
+                                    <div class="experience__icons">
+                                        <div class="text-with-circle"></div>
+                                        <img src="./Assets/Icons/University.svg" alt="University" class="experience__icon">
+                                    </div>
+                                    <div>
+                                        <h4>МГТУ им. Н. Э. Баумана</h4>
+                                        <small>Диплом магистра | Москва (2014-2020)</small>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmo. </p>
+                            </div>
+                            <div class="experience__item">
+                                <div class="experience__content">
+                                    <div class="experience__icons">
+                                        <div class="text-with-circle"></div>
+                                        <img src="./Assets/Icons/Courses.svg" alt="Courses" class="experience__icon">
+                                    </div>
+                                    <div>
+                                        <h4>Udemy</h4>
+                                        <small>Курсы по Web-разработке</small>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmo. </p>
                             </div>
                         </div>
-                        <div class="experience__item">
-                            <img src="./Assets/Icons/Courses.svg" alt="Courses" class="experience-icon">
-                            <div class="experience__content">
-                                <h4>Udemy</h4>
-                                <p>Курсы по Web-разработке</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Опыт работы -->
+                    </div>
                     <div class="experience__column">
                         <h3>Опыт работы</h3>
-                        <div class="experience__item">
-                            <img src="./Assets/Icons/Developer.svg" alt="Developer" class="experience-icon">
-                            <div class="experience__content">
-                                <h4>Front-End Developer</h4>
-                                <p>EPAM | Москва (2018–2019)</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <div class="experience__timeline">
+                            <div class="experience__item">
+                                <div class="experience__content">
+                                    <div class="experience__icons">
+                                        <div class="text-with-circle"></div>
+                                        <img src="./Assets/Icons/Developer.svg" alt="Developer" class="experience__icon">
+                                    </div>
+                                    <div>
+                                        <h4>Front-End Developer</h4>
+                                        <small>EPAM | Москва (2018–2019)</small>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmo. </p>
+                            </div>
+                            <div class="experience__item">
+                                <div class="experience__content">
+                                    <div class="experience__icons">
+                                        <div class="text-with-circle"></div>
+                                        <img src="./Assets/Icons/designer.svg" alt="Design" class="experience__icon">
+                                    </div>
+                                    <div>
+                                        <h4>UI/UX Designer</h4>
+                                        <small>Squad Team | Москва (2018)</small>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmo. </p>
                             </div>
                         </div>
-                        <div class="experience__item">
-                            <img src="./Assets/Icons/designer.svg" alt="Design" class="experience-icon">
-                            <div class="experience__content">
-                                <h4>UI/UX Designer</h4>
-                                <p>Squad Team | Москва (2018)</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            </div>
-                        </div>
+
                     </div>
+                  
                 </div>
 
             </section>
 
 
             <section id="skills">
-                <h3>Навыки</h3>
+                <h3 class="text-centre-circle">Навыки</h3>
                 <h2>Что я использую в работе</h2>
+                <div class="horizontal-bar line-centered"></div>
                 <div class="skills__container">
                     <div class="skill">
                         <img src="./Assets/Icons/html5.svg" alt="HTML5">
                         <h4>HTML5</h4>
-                        <p>Именно он создает каркас вашего сайта или приложения, а затем верстка позволяет мне создать
-                            более SEO-оптимизированную структуру вашего продукта.</p>
+                        <small>Именно он создает каркас вашего сайта или приложения,
+                             а пятая версия позволит мне создавать более
+                              SEO-оптимизированную структуру вашего продукта</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/css3.svg" alt="CSS3">
                         <h4>CSS3</h4>
-                        <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или
-                            приложения. Все ограничивается только вашей фантазией!</p>
+                        <small>Этот язык стилей позволяет мне создавать 
+                            абсолютно любой внешний вид вашего сайта или приложения. 
+                            Все ограничивается только вашей фантазией!</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/JS.svg" alt="JavaScript">
                         <h4>JavaScript</h4>
-                        <p>Этот язык программирования позволяет оживить все: от слайдеров, форм, подсказок, всплывающих
-                            окон до серверов и многого другого.</p>
+                        <small>Этот язык программирования позволяет оживить все что угодно:
+                             слайдеры, окна, 
+                            подсказки, вкладки, получение данных от сервера и многое другое</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Jquery.svg" alt="jQuery">
                         <h4>jQuery</h4>
-                        <p>Библиотека jQuery позволяет ускорить разработку. Без необходимости интегрировать в проект её
-                            мы не будем, но навык работы с ней присутствует.</p>
+                        <small>Библиотека Jquery позволит ускорить разработку.
+                             Без необходимости интегрировать в 
+                            проект мы её не будем, но навык работы с ней присутствует</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/React.svg" alt="React">
                         <h4>React</h4>
-                        <p>Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный
-                            продукт именно под ваш случай.</p>
+                        <small>Эта библиотека позволяет создавать web-приложения. 
+                            Мы можем создать 
+                            максимально интерактивный продукт именно под ваши цели</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Node.js.svg" alt="Node.js">
                         <h4>Node.js</h4>
-                        <p>Эта платформа позволяет создать сервер для вашего проекта – "мозг", который будет выполнять
-                            действия, которые пользователь не видит.</p>
+                        <small>Эта платформа позволяет создавать бэкенд для вашего продукта
+                             - “мозги”,
+                             которые будут выполнять действия, которые пользователь не видит</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Mongo.db.svg" alt="MongoDB">
                         <h4>MongoDB</h4>
-                        <p>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения.</p>
+                        <small>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</small>
                     </div>
                 </div>
                 ...
                 <div class="skills__progress">
                     <div class="skills__bars">
-                        <p>Создание сайтов <span class="percentage">100%</span></p>
+                        <h4 class="text-with-circle">Создание сайтов <span class="skills__percentage">100%</span></h4>
                         <div class="skill__bar"><span style="width: 100%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <p>Создание приложений <span class="percentage">85%</span></p>
+                        <h4 class="text-with-circle">Создание приложений <span class="skills__percentage">85%</span></h4>
                         <div class="skill__bar"><span style="width: 85%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <p>Работа с данными <span class="percentage">90%</span></p>
+                        <h4 class="text-with-circle">Работа с данными <span class="skills__percentage">90%</span></h4>
                         <div class="skill__bar"><span style="width: 90%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <p>Креативность <span class="percentage">70%</span></p>
+                        <h4 class="text-with-circle">Креативность <span class="skills__percentage">70%</span></h4>
                         <div class="skill__bar"><span style="width: 70%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <p>Создание дизайна <span class="percentage">90%</span></p>
+                        <h4 class="text-with-circle">Создание дизайна <span class="skills__percentage">90%</span></h4>
                         <div class="skill__bar"><span style="width: 90%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <p>Soft skills <span class="percentage">95%</span></p>
+                        <h4 class="text-with-circle">Soft skills <span class="skills__percentage">95%</span></h4>
                         <div class="skill__bar"><span style="width: 95%;"></span></div>
                     </div>
                 </div>
@@ -221,8 +276,10 @@
 
 
             <section id="portfolio">
-                <h3>Портфолио</h3>
+                <h3 class="text-centre-circle">Портфолио</h3>
                 <h2>Мои работы</h2>
+                <div class="horizontal-bar line-centered"></div>
+
                 <div class="portfolio__block">
                     <div class="portfolio__item1">
                         <img src="./Assets/Img/uber.jpg" alt="Portfolio 1">
@@ -246,52 +303,55 @@
             </section>
 
             <section id="price">
-                <h2>Прайс-лист</h2>
+                <h3 class="text-centre-circle">Прайс-лист</h3>
+                <div class="horizontal-bar line-centered"></div>
                 <div class="price__list">
                     <div class="price__column">
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Landing-page</h4>
-                                <p>Одностраничный сайт для презентации услуг/товаров.</p>
+                                <p>от 8000 руб.</p>
                             </div>
-                            <div class="price__count">от 8000 руб.</div>
+                            <small>Одностраничный сайт для презентации услуг/товаров.</small>
+
                         </div>
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Корпоративный сайт</h4>
-                                <p>Сайт для вашего бизнеса или компании.</p>
+                                <p>от 20000 руб.</p>
                             </div>
-                            <div class="price__count">от 20000 руб.</div>
+                            <small>Сайт для вашего бизнеса или компании.</small>
+
                         </div>
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Интернет-магазин</h4>
-                                <p>Инструмент для ваших продаж в сети.</p>
+                                <p>от 30000 руб.</p>
                             </div>
-                            <div class="price__count">от 30000 руб.</div>
+                            <small>Инструмент для ваших продаж в сети.</small>
                         </div>
                     </div>
                     <div class="price__column">
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Web-приложение</h4>
-                                <p>Приложение внутри браузера для лучшего комфорта.</p>
+                                <p>от 28000 руб.</p>
                             </div>
-                            <div class="price__count">от 28000 руб.</div>
+                            <small>Приложение внутри браузера для лучшего комфорта.</small>
                         </div>
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Android/iOS Приложение</h4>
-                                <p>Приложение для смартфона любой ОС.</p>
+                                <p>от 26000 руб.</p>
                             </div>
-                            <div class="price__count">от 26000 руб.</div>
+                            <small>Приложение для смартфона любой ОС.</small>
                         </div>
                         <div class="price__item">
                             <div class="price__text">
                                 <h4>Дизайн</h4>
-                                <p>Создадим дизайн для вашего сайта/приложения.</p>
+                                <p>Индивидуально</p>
                             </div>
-                            <div class="price__count">Индивидуально</div>
+                            <small>Создадим дизайн для вашего сайта/приложения.</small>
                         </div>
                     </div>
                 </div>
@@ -299,26 +359,36 @@
             <section id="contact">
                 <img src="./Assets/Img/Photo1.jpg" alt="photo" class="contact__image">
                 <div class="contact__form">
-                    <h3>Контакты</h3>
+                    <h3 class="text-with-circle">Контакты</h3>
                     <h2>Свяжитесь со мной</h2>
+                    <div class="horizontal-bar"></div>
+
                     <p>Любым удобным для вас способом:</p>
                     <div class="contact__links">
-                        <a href="#"><img src="./Assets/Icons/Facebook.svg" alt="Facebook"></a>
-                        <a href="#"><img src="./Assets/Icons/Telegram.svg" alt="Telegram"></a>
-                        <a href="#"><img src="./Assets/Icons/Instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Telegram.svg" alt="Telegram"></a>
+                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Instagram.svg" alt="Instagram"></a>
                     </div>
                     <p>Или оставьте ваши данные и я сама вам напишу:</p>
                     <form class="form__container">
+                        <div class="form__line">
+                        <div class="form__item">
                         <label for="name">Ваше имя</label>
                         <input type="text" id="name" placeholder="Иван">
+                    </div>
 
+                    <div class="form__item">
                         <label for="email">Ваша почта</label>
                         <input type="email" id="email" placeholder="ivan@example.com">
+                    </div>
+                </div>
+                        <div class="form__item">
 
                         <label for="message">Ваше сообщение</label>
                         <textarea id="message" placeholder="Напишите ваше сообщение..."></textarea>
+                    </div>
 
-                        <button type="submit">Отправить сообщение</button>
+                        <button class="contact__button" type="submit">Отправить сообщение</button>
                     </form>
                 </div>
             </section>

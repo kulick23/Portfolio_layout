@@ -26,6 +26,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.price__text p {
+text-align: end;
+}
+
 
 .price__text h4 {
     position: relative;
@@ -41,4 +45,9 @@
     height: 15px;
     background-color: var(--color-secondary);
     border-radius: 50%;
+}
+@media (max-width: 768px) {
+.price__text h4 {
+margin-left: 20px;
+}
 }

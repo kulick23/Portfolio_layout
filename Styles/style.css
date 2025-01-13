@@ -70,7 +70,10 @@ button {
     font-size: 1rem;
     cursor: pointer;
 }
+input{
+    cursor: pointer;
 
+}
 a {
     cursor: pointer;
     color: var(--color-white);
@@ -126,4 +129,36 @@ main {
     width: 60px;
     height: 3px;
     background-color: var(--color-secondary);
+}
+.blue-text {
+    color: blue;
+}
+@media (max-width: 768px) {
+    :root {
+        --page-margin: 5%;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    small {
+        font-size: 0.7rem;
+    }
+    button {
+        padding: 12px 12px;
+        font-size: 1rem;
+ 
+    }
 }

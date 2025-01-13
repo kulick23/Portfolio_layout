@@ -66,3 +66,16 @@
     margin-left: auto;
     padding-left: 10px;
 }
+@media (max-width: 768px) {
+    .skills__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills__progress {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills__bars h4{
+        margin-left: 7px;
+    }
+}

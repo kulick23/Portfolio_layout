@@ -99,7 +99,7 @@
                                 <img class="about__icon" src="./Assets/Icons/mobile_dev.svg" alt="Mobile development">
                             </div>
                             <div class="about__icon--text">
-                                <h4>Web-разработка</h4>
+                                <h4>Разработка приложений</h4>
                                 <small>Lorem ipsum dolor sit amet,<br>
                                     consectetur adipiscing elit, sed <br> do eiusmod tempor
                                     incididunt ut <br> labore et dolore magna aliqua.</small>
@@ -111,7 +111,7 @@
                                 <img class="about__icon" src="./Assets/Icons/design.svg" alt="Design">
                             </div>
                             <div class="about__icon--text">
-                                <h4>Web-разработка</h4>
+                                <h4>UI/UX Design</h4>
                                 <small>Lorem ipsum dolor sit amet,<br>
                                     consectetur adipiscing elit, sed <br> do eiusmod tempor
                                     incididunt ut <br> labore et dolore magna aliqua.</small>
@@ -267,7 +267,6 @@
                             приложения</small>
                     </div>
                 </div>
-                ...
                 <div class="skills__progress">
                     <div class="skills__bars">
                         <h4 class="text-with-circle">Создание сайтов <span class="skills__percentage">100%</span></h4>
@@ -413,6 +412,10 @@
                             <label for="message">Ваше сообщение</label>
                             <textarea id="message" placeholder="Напишите ваше сообщение..."></textarea>
                         </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="privacy" required>
+                            <small>Я согласен(а) с <small class="blue-text">политикой конфиденциальности</small></small>          
+                                      </div>
 
                         <button class="contact__button" type="submit">Отправить сообщение</button>
                     </form>
@@ -446,7 +449,6 @@
                     overlay.classList.remove("active");
                 });
 
-                // Form validation
                 const form = document.querySelector(".form__container");
                 form.addEventListener("submit", (event) => {
                     event.preventDefault();
@@ -455,7 +457,6 @@
                     const email = document.getElementById("email");
                     const message = document.getElementById("message");
 
-                    // Clear previous error messages
                     document.querySelectorAll(".error-message").forEach(el => el.remove());
 
                     if (name.value.trim() === "") {
@@ -477,7 +478,6 @@
                     }
 
                     if (isValid) {
-                        // Example of sending data to a fake JSON API
                         fetch("https://jsonplaceholder.typicode.com/posts", {
                             method: "POST",
                             headers: {

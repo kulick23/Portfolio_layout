@@ -1,6 +1,7 @@
 #experience {
     margin-top: 100px;
     text-align: center;
+    
 }
 
 .experience__block {
@@ -79,4 +80,14 @@
 .experience__content {
     display: flex;
     gap: 5px;
+}
+@media (max-width: 768px) {
+    .experience__block {    
+        flex-direction: column;
+    
+    }
+    .experience__column h3 {
+        position: static;
+        margin-left: 20px;
+    }
 }

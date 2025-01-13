@@ -62,3 +62,50 @@
 .contact__button {
     width: 50%;
 }
+.form__checkbox {
+display: none;
+}
+@media (max-width: 768px) {
+    #contact {
+        display: flex;
+        flex-direction: column;        
+    
+    }
+    .contact__image{
+        display: none;
+    }
+    .contact__form {
+        flex: 1;
+        padding: 20px 0;
+    }
+    .contact__form h3 {
+    margin-left: 20px;
+    }
+    .form__line {
+        display: block;
+    }
+    .form__container input,
+    .form__container textarea {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .contact__button {
+        width: 100%;
+    }
+    .form__checkbox {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .form__checkbox input[type="checkbox"] {
+        width: auto;
+        margin: 0;
+    }
+}

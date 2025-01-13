@@ -34,3 +34,14 @@
 .portfolio__item6 {
     grid-column: span 2 / span 2;
 }
+@media (max-width: 768px) {
+    .portfolio__block {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio__block img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;        object-fit: cover;
+    }
+}

@@ -1,17 +1,21 @@
-
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .contact__image {
     flex: 1;
+    align-self: center;
+    justify-self: center;
 }
-.contact__icon{
+
+.contact__icon {
     height: 30px;
 }
+
 .contact__form {
     flex: 1;
     padding: 7px 40px;
@@ -42,16 +46,19 @@
     resize: none;
     height: 100px;
 }
-.form__line{
+
+.form__line {
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 }
+
 .form__item label {
     position: relative;
     top: 10px;
     left: 20px;
     background-color: white;
 }
-.contact__button{
-    width: 40%;
+
+.contact__button {
+    width: 50%;
 }

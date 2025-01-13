@@ -28,9 +28,15 @@ body {
 
 p,
 small,
-a {
+a,
+label {
     font-family: var(--font-regular);
     font-weight: 700;
+
+}
+
+label {
+    font-weight: 100;
 
 }
 

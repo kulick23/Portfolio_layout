@@ -22,7 +22,8 @@
 
 .skill h4 {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-block-end: 1vh;
+
 }
 
 .skills__progress {
@@ -59,23 +60,44 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .skills__bars .skills__percentage {
     margin-left: auto;
     padding-left: 10px;
 }
+
+.skill img {
+    height: 10vh;
+}
+
+.skill small {
+    font-size: 1.5vh;
+}
+
 @media (max-width: 768px) {
     .skills__container {
         display: flex;
         flex-direction: column;
     }
+
     .skills__progress {
         display: flex;
         flex-direction: column;
     }
-    .skills__bars h4{
+
+    .skills__bars h4 {
         margin-left: 7px;
+    }
+
+    .skill h4 {
+        margin-top: 15px;
+        margin-block-end: 4vh;
+
+    }
+
+    .skill small {
+        font-size: 2vh;
     }
 }

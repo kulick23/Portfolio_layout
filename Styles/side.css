@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 80%;
+    width: 20%;
     height: 100%;
     background-color: var(--color-secondary);
     z-index: 1000;
@@ -76,4 +76,12 @@
     width: 100%;
     gap: 20px;
     margin-top: 40%;
+}
+
+@media (max-width: 768px) {
+    .side__menu {
+        width: 80%;
+
+    }
+
 }

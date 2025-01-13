@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="./Styles/portfolio.css">
     <link rel="stylesheet" href="./Styles/price.css">
     <link rel="stylesheet" href="./Styles/skills.css">
-
-
+    <link rel="stylesheet" href="./Styles/side.css">
 
 </head>
 
@@ -35,14 +34,33 @@
                 <h3 class="text-with-circle">Меня зовут Александра Смит</h3>
                 <h1>Я web-разработчик<br> из города Москва</h1>
                 <div class="header__buttons">
-                    <button>Портфолио</button>
-                    <button class="button__opacity">Про меня</button>
+                    <button data-target="#portfolio">Портфолио</button>
+                    <button class="button__opacity" data-target="#about">Про меня</button>
                 </div>
             </div>
 
             <div class="header__right">
                 <button class="header__burger button__opacity"><img src="./Assets/Icons/Hamburger.svg"></button>
             </div>
+            <nav class="side__menu">
+                <button id="close-menu"><img class="side__menu--img" src="./Assets/Icons/Close.svg" alt="Close"></button>
+                <div class="side__content">
+                    <ul class="side__list">
+                        <li><a href="#about">Про меня</a></li>
+                        <li><a href="#experience">Опыт</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#price">Прайс-лист</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="side__icons">
+                    <a href="https://github.com/"><img src="./Assets/Icons/Github.svg"></a>
+                    <a href="https://www.instagram.com/"><img src="./Assets/Icons/Instagram.svg"></a>
+                    <a href="https://www.facebook.com/"><img src="./Assets/Icons/Facebook.svg"></a>
+                </div>
+            </nav>
+            <div class="side__overlay"></div>
 
         </header>
 
@@ -117,7 +135,8 @@
                                 <div class="experience__content">
                                     <div class="experience__icons">
                                         <div class="text-with-circle"></div>
-                                        <img src="./Assets/Icons/University.svg" alt="University" class="experience__icon">
+                                        <img src="./Assets/Icons/University.svg" alt="University"
+                                            class="experience__icon">
                                     </div>
                                     <div>
                                         <h4>МГТУ им. Н. Э. Баумана</h4>
@@ -155,7 +174,8 @@
                                 <div class="experience__content">
                                     <div class="experience__icons">
                                         <div class="text-with-circle"></div>
-                                        <img src="./Assets/Icons/Developer.svg" alt="Developer" class="experience__icon">
+                                        <img src="./Assets/Icons/Developer.svg" alt="Developer"
+                                            class="experience__icon">
                                     </div>
                                     <div>
                                         <h4>Front-End Developer</h4>
@@ -186,7 +206,7 @@
                         </div>
 
                     </div>
-                  
+
                 </div>
 
             </section>
@@ -201,48 +221,49 @@
                         <img src="./Assets/Icons/html5.svg" alt="HTML5">
                         <h4>HTML5</h4>
                         <small>Именно он создает каркас вашего сайта или приложения,
-                             а пятая версия позволит мне создавать более
-                              SEO-оптимизированную структуру вашего продукта</small>
+                            а пятая версия позволит мне создавать более
+                            SEO-оптимизированную структуру вашего продукта</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/css3.svg" alt="CSS3">
                         <h4>CSS3</h4>
-                        <small>Этот язык стилей позволяет мне создавать 
-                            абсолютно любой внешний вид вашего сайта или приложения. 
+                        <small>Этот язык стилей позволяет мне создавать
+                            абсолютно любой внешний вид вашего сайта или приложения.
                             Все ограничивается только вашей фантазией!</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/JS.svg" alt="JavaScript">
                         <h4>JavaScript</h4>
                         <small>Этот язык программирования позволяет оживить все что угодно:
-                             слайдеры, окна, 
+                            слайдеры, окна,
                             подсказки, вкладки, получение данных от сервера и многое другое</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Jquery.svg" alt="jQuery">
                         <h4>jQuery</h4>
                         <small>Библиотека Jquery позволит ускорить разработку.
-                             Без необходимости интегрировать в 
+                            Без необходимости интегрировать в
                             проект мы её не будем, но навык работы с ней присутствует</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/React.svg" alt="React">
                         <h4>React</h4>
-                        <small>Эта библиотека позволяет создавать web-приложения. 
-                            Мы можем создать 
+                        <small>Эта библиотека позволяет создавать web-приложения.
+                            Мы можем создать
                             максимально интерактивный продукт именно под ваши цели</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Node.js.svg" alt="Node.js">
                         <h4>Node.js</h4>
                         <small>Эта платформа позволяет создавать бэкенд для вашего продукта
-                             - “мозги”,
-                             которые будут выполнять действия, которые пользователь не видит</small>
+                            - “мозги”,
+                            которые будут выполнять действия, которые пользователь не видит</small>
                     </div>
                     <div class="skill">
                         <img src="./Assets/Icons/Mongo.db.svg" alt="MongoDB">
                         <h4>MongoDB</h4>
-                        <small>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</small>
+                        <small>Это нереляционная база данных, которая будет хранить данные вашего сайта или
+                            приложения</small>
                     </div>
                 </div>
                 ...
@@ -252,7 +273,8 @@
                         <div class="skill__bar"><span style="width: 100%;"></span></div>
                     </div>
                     <div class="skills__bars">
-                        <h4 class="text-with-circle">Создание приложений <span class="skills__percentage">85%</span></h4>
+                        <h4 class="text-with-circle">Создание приложений <span class="skills__percentage">85%</span>
+                        </h4>
                         <div class="skill__bar"><span style="width: 85%;"></span></div>
                     </div>
                     <div class="skills__bars">
@@ -365,28 +387,31 @@
 
                     <p>Любым удобным для вас способом:</p>
                     <div class="contact__links">
-                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Facebook.svg" alt="Facebook"></a>
-                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Telegram.svg" alt="Telegram"></a>
-                        <a href="#"><img class="contact__icon" src="./Assets/Icons/Instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/"><img class="contact__icon" src="./Assets/Icons/Facebook.svg"
+                                alt="Facebook"></a>
+                        <a href="https://telegram.org/"><img class="contact__icon" src="./Assets/Icons/Telegram.svg"
+                                alt="Telegram"></a>
+                        <a href="https://www.instagram.com/"><img class="contact__icon"
+                                src="./Assets/Icons/Instagram.svg" alt="Instagram"></a>
                     </div>
                     <p>Или оставьте ваши данные и я сама вам напишу:</p>
                     <form class="form__container">
                         <div class="form__line">
-                        <div class="form__item">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" placeholder="Иван">
-                    </div>
+                            <div class="form__item">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" placeholder="Иван">
+                            </div>
 
-                    <div class="form__item">
-                        <label for="email">Ваша почта</label>
-                        <input type="email" id="email" placeholder="ivan@example.com">
-                    </div>
-                </div>
+                            <div class="form__item">
+                                <label for="email">Ваша почта</label>
+                                <input type="email" id="email" placeholder="ivan@example.com">
+                            </div>
+                        </div>
                         <div class="form__item">
 
-                        <label for="message">Ваше сообщение</label>
-                        <textarea id="message" placeholder="Напишите ваше сообщение..."></textarea>
-                    </div>
+                            <label for="message">Ваше сообщение</label>
+                            <textarea id="message" placeholder="Напишите ваше сообщение..."></textarea>
+                        </div>
 
                         <button class="contact__button" type="submit">Отправить сообщение</button>
                     </form>
@@ -396,13 +421,30 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", () => {
-                const skillBars = document.querySelectorAll(".skill-bar span");
-                skillBars.forEach(bar => {
-                    const width = bar.style.width;
-                    bar.style.width = "0";
-                    setTimeout(() => {
-                        bar.style.width = width;
-                    }, 200);
+                const burgerButton = document.querySelector(".header__burger");
+                const sideMenu = document.querySelector(".side__menu");
+                const overlay = document.querySelector(".side__overlay");
+                const closeButton = document.getElementById("close-menu");
+                const buttons = document.querySelectorAll("button[data-target]");
+
+                buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const target = document.querySelector(button.getAttribute("data-target"));
+                        if (target) {
+                            target.scrollIntoView({ behavior: "smooth" });
+                        }
+                    });
+                });
+                burgerButton.addEventListener("click", () => {
+                    sideMenu.classList.toggle("active");
+                    overlay.classList.toggle("active");
+                });
+
+
+
+                closeButton.addEventListener("click", () => {
+                    sideMenu.classList.remove("active");
+                    overlay.classList.remove("active");
                 });
             });
         </script>
